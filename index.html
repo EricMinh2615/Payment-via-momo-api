@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Portal</title>
+<style type="text/css">
+.fm-btn{
+	border:none;
+	padding:4px;
+	cursor:pointer;
+	text-align:center;
+	height:25px;
+	width:80px;
+	border-radius:5px;
+	font-weight:bold;
+	font-size:14px;
+	box-shadow: 0 1px 1px #666666;
+	color:#FFFFFF;
+	text-shadow:none;
+	background:linear-gradient(#5f9cc5, #396b9e) repeat scroll 0 0 #396b9e;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<br>
+
+ <div style="color:green;">
+                    <div class='aler' align="center" style='whitesmoke;font-size:20px'>To pay for portal platform.</div>
+             <br/>
+             <br/>
+			 
+			 <div class="alert alert-warning" style="color:black;" align="center" style="font-size:16px">Please have your mobile phone beside you ... you have <b>120 seconds</b> to approve payment using your mobile phone. </div>
+			 </div>
+			 <br>
+			 <br>
+	<form method="post" action="pay.php">
+		<table align="center" style="background:#d2d2d2;border:1px solid #0cf;width:350px;padding-top:5px;" cellspacing="2" cellpadding="3">
+		  <tr>
+			<td style="width:60%"><span style="float:left;">Client Name</span></td>
+			<td style="width:40%">
+				<input name="client-name" id="client-name" type="text" style="margin-top:2px;width:120px;float:left" placeholder="Name" />
+				
+			</td>
+		  </tr>
+		  <tr>
+			<td style="width:60%"><span style="float:left;">Phone Number:(+237)</span></td>
+			<td style="width:40%">
+				<input name="phone-num" id="phone-num" type="text" style="margin-top:2px;width:120px;float:left" placeholder="9 characters" />
+				
+			</td>
+		  </tr>
+		  <tr id="status-Payment" style="display:none;">
+			<td colspan="2" align="right" style="width:100%">
+				<img name="status-img" align="left" id="status-img" style="height:25px;width:25px" />
+				<span id="waitingId" style="">Waiting payment...</span>
+				<div id="payment-text" style="width:100%"></div>
+			</td>
+		  </tr>
+		  <tr>
+			<td colspan="2" style="height:50px;" align="center">
+				<input name="submit" type="submit" value="Submit >>" class="fm-btn"/>
+			</td>
+		  </tr>
+		</table>
+	</form>
+</div>
+
+
+
+         
+     </div>
+    </div>
+</div>
+<br/><br/>
+<br/><br/>
+
+</div>
+</center>
+</body>
+
+</html>
