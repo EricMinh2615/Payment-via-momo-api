@@ -1,0 +1,26 @@
+MOMO API USAGE
+Request a payment:
+
+url: http://momoapi.iceteck.com/index.php/requestpayment
+method: POST
+parameters:
+client_name (string) - This is the name of your business or personal name
+client (long) -  This is the phone number you want the cash collected from your customer to go to. It must be a valid mobile money phone number.
+customer (long) - This is the number(mobile money) of the customer paying for your service
+amount (long) - This is the amount to be deducted from your customer. NOTE: we charge 2% for each transaction.
+
+Return value
+the request returns a JSON object after a maximum of 3 minutes to determine the state of the transaction
+
+{
+statuscode: int(),
+message: string()
+}
+
+statuscode can be
+200 - transaction was successful
+403 - transaction was not accomplished in time by user or account has insufficient funds
+404 - data wasn't sent or data sent was incorrect.
+
+
+By me:
