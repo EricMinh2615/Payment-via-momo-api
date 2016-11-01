@@ -56,7 +56,7 @@ $Response = curl_exec($curl);
 //decode:
 $Result = json_decode($Response);
 
-if($Result->Status==200){
+if($Result['statuscode']==200){
 echo "Success";
 }
 else {
